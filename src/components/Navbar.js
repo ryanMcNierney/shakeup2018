@@ -9,20 +9,20 @@ const Navbar = () => {
   return (
     <header className="App-header">
       <div id="nav-title">
-        <img id="nav-icon" src={nflLogo} />
+        <img id="nav-icon" src={nflLogo} alt="nfl" />
         <h1 className="App-title">The Shake Up</h1>
       </div>
       <div id="nav-links">
-        <div selected="true">
-          <img id="nav-icon" src={standingsLogo} />
+        <div>
+          <img id="nav-icon" src={standingsLogo} alt="standings" />
           <span>Standings</span>
         </div>
         <div>
-          <img id="nav-icon" src={top6} />
+          <img id="nav-icon" src={top6} alt="top6" />
           <span>Top 6</span>
         </div>
         <div>
-          <img id="nav-icon" src={matchups} />
+          <img id="nav-icon" src={matchups} alt="matchups" />
           <span>Matchups</span>
         </div>
       </div>
