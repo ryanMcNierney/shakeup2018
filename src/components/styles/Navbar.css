@@ -1,0 +1,72 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222;
+  box-shadow: 0 2px 4px rgba(0,0,0,.5);
+  height: 72px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+#nav-title {
+  display: flex;
+  margin-left: 15px;
+}
+
+#nav-title > img {
+  height: 60px;
+  vertical-align: bottom;
+}
+
+#nav-title > h1 {
+  align-self: center;
+  margin: 0px;
+}
+
+#nav-links {
+  display: flex;
+  color: #9e9e9e;
+}
+
+#nav-links > div {
+  margin-right: 15px;
+  font-size: 1.25rem;
+}
+
+#nav-icon {
+  vertical-align: bottom;
+  height: 32px;
+  margin-right: 10px;
+}
+
+/* Mobile */
+@media all and (max-width: 736px) {
+  #nav-title > h1{
+    display: none;
+  }
+
+  #nav-links > div > span {
+    display: none;
+  }
+
+  #nav-links > div:not(:last-child) {
+    margin-right: 30px;
+  }
+
+}
+
+
+
+
