@@ -10,7 +10,6 @@ class App extends Component {
       <div className="App">
         <Navbar />
         <div id="content">
-          <h1>Content</h1>
           <StandingsContainer />
         </div>
       </div>
