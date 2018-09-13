@@ -37,9 +37,10 @@
   color: #9e9e9e;
 }
 
-#nav-links > div {
+#nav-links > a > div {
   margin-right: 15px;
   font-size: 1.25rem;
+  color: #9e9e9e;
 }
 
 #nav-icon {
@@ -48,18 +49,22 @@
   margin-right: 10px;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Mobile */
 @media all and (max-width: 736px) {
   #nav-title > h1{
     display: none;
   }
 
-  #nav-links > div > span {
+  #nav-links > a > div > span {
     display: none;
   }
 
-  #nav-links > div:not(:last-child) {
-    margin-right: 30px;
+  #nav-links > a:not(:last-child) > div {
+    margin-right: 50px;
   }
 
 }

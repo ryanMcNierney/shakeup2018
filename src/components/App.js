@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { HashRouter, Route } from 'react-router-dom'
 import Navbar from './Navbar'
 import StandingsContainer from './standings/StandingsContainer'
 
@@ -7,12 +8,15 @@ import StandingsContainer from './standings/StandingsContainer'
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Navbar />
-        <div id="content">
-          <StandingsContainer />
+      <HashRouter>
+        <div className="App">
+          <Navbar />
+          <div id="content">
+            <Route path='/standings' component={StandingsContainer} />
+            <Route exact path='/' component={StandingsContainer} />
+          </div>
         </div>
-      </div>
+      </HashRouter>
     );
   }
 }
