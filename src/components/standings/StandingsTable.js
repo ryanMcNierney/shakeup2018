@@ -24,7 +24,7 @@ const StandingsTable = (props) => {
               return (
                 <tr key={team.teamIdx} id="table-row">
                   <td>{team.rank}</td>
-                  <td id="team-name"><img alt="team-icon" id="table-icon" src={team.img} /><div>{team.team}</div></td>
+                  <td id="team-name"><img alt="team-icon" id="table-icon" src={team.img} /><span>{team.team}</span></td>
                   <td>{team.record}</td>
                   <td>{team.top6}</td>
                   <td>{team.ptsFor}</td>

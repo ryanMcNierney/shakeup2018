@@ -1,0 +1,31 @@
+
+#top6-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ant-card-head-title {
+  font-size: 24px;
+}
+
+#top6-row {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+#top6-img {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  vertical-align: middle;
+}
+
+#top6-proj-act {
+  display: flex;
+  justify-content: space-between;
+}
+
+#top6-label {
+  font-weight: 700;
+}
