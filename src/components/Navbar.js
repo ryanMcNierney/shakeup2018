@@ -26,12 +26,6 @@ const Navbar = () => {
             <span>Top 6</span>
           </div>
         </Link>
-        <Link to='/matchups'>
-          <div>
-            <img id="nav-icon" src={matchups} alt="matchups" />
-            <span>Matchups</span>
-          </div>
-        </Link>
       </div>
     </header>
   )

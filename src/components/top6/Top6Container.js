@@ -11,9 +11,13 @@ class Top6Container extends Component {
   }
 
   render() {
-    const { top6 } = this.props
+    const { top6, loading } = this.props
     return (
-      <Top6Grid top6={top6} />
+      <React.Fragment>
+        {
+          (loading === true) ? <div id="loading"></div> : <Top6Grid top6={top6} />
+        }
+      </React.Fragment>
     )
   }
 

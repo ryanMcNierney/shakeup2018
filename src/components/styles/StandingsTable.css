@@ -54,19 +54,19 @@ tbody tr:nth-child(odd) {
 
 /* Tablet */
 @media all and (max-width: 736px) {
-  td:nth-child(4) {
+  #table-row > td:nth-child(4) {
     display: none;
   }
 
-  th:nth-child(4) {
+  #table-row > th:nth-child(4) {
     display: none;
   }
 
-  td:nth-child(6) {
+  #table-row > td:nth-child(6) {
     display: none;
   }
 
-  th:nth-child(6) {
+  #table-row > th:nth-child(6) {
     display: none;
   }
 }
