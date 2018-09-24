@@ -21,9 +21,5 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  },
-  "devDependencies": {
-    "babel-plugin-import": "^1.9.1",
-    "gh-pages": "^2.0.0"
   }
 }
