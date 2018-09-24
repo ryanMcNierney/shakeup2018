@@ -24,6 +24,6 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "babel-plugin-import": "^1.8.0"
+    "babel-plugin-import": "^1.9.1"
   }
 }
