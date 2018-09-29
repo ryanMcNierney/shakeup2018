@@ -37,12 +37,17 @@
   padding: 15px;
 }
 
+#team-name {
+  display: flex;
+  align-items: center;
+}
+
 #top6-row:nth-of-type(-n+6) > td {
   color: green;
 }
 
 @media all and (max-width: 480px) {
-  #top6-content > table {
+  #top6-content > div > table {
     width: 100%;
   }
 

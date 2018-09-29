@@ -42,7 +42,12 @@ class Top6Grid extends Component {
                   return (
                     <tr key={team.teamIdx} id="top6-row">
                       <td>{team.rank}</td>
-                      <td id="team-name"><img alt="team-icon" id="table-icon" src={team.img} /><span>{team.team}</span></td>
+                      <td id="team-name">
+                        <div>
+                          <img alt="team-icon" id="table-icon" src={team.img} />
+                        </div>
+                        <div>{team.team}</div>
+                      </td>
                       <td>{team.projected}</td>
                       <td>{team.actual}</td>
                     </tr>
