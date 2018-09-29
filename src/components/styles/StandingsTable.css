@@ -83,7 +83,7 @@ tbody tr:nth-child(odd) {
   }
 
   th {
-    font-size: 14px;
+    font-size: 12px;
     padding: 5px;
   }
 
@@ -93,7 +93,7 @@ tbody tr:nth-child(odd) {
 
 
   td {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   #table-row > td {

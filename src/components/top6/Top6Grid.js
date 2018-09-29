@@ -11,7 +11,6 @@ class Top6Grid extends Component {
     this.handleClick = this.handleClick.bind(this)
   }
 
-
   async handleClick() {
     await this.props.getTop6()
   }
