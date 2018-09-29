@@ -1,4 +1,4 @@
-#top6-content > table {
+#top6-content > div > table {
   width: 80%;
   padding: 15px;
   background-color: white;
@@ -6,6 +6,23 @@
   border-spacing: 0px;
   align-self: center;
   margin: 0 auto;
+}
+
+#top6-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10px 0 10px;
+}
+
+#refresh {
+  padding: 6px;
+  background-color: #1976d2;
+  color: white;
+  border-color: #1976d2;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 #top6-head {

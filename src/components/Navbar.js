@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import standingsLogo from './styles/images/standings.png'
 import top6 from './styles/images/top6.png'
-import matchups from './styles/images/matchups.png'
 import nflLogo from './styles/images/nflLogo.png'
 import './styles/Navbar.css'
 
