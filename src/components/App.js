@@ -4,6 +4,7 @@ import { connect } from 'react-redux'
 import Navbar from './Navbar'
 import StandingsTable from './standings/StandingsTable'
 import Top6Grid from './top6/Top6Grid'
+import Loading from './Loading'
 import { standingsFetch } from '../reducers/standingsReducer'
 import { top6Fetch } from '../reducers/top6Reducer'
 
@@ -23,7 +24,7 @@ class App extends Component {
         <div className="App">
           <Navbar />
           {
-            (standingsLoading === true || top6Loading === true) ? <div id="loading"></div> :
+            (standingsLoading === true || top6Loading === true) ? <Loading /> :
               <div id="content">
                 <Route path='/standings' render={() => <StandingsTable standings={standings} />} />
                 <Route path='/top6' render={() => <Top6Grid top6={top6} />} />
