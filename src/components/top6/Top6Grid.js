@@ -1,4 +1,5 @@
 import React from 'react'
+import '../styles/top6.css'
 
 const Top6Grid = (props) => {
   const { top6 } = props

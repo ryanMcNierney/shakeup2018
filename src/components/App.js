@@ -1,26 +1,55 @@
 import React, { Component } from 'react'
 import { HashRouter, Route } from 'react-router-dom'
+import { connect } from 'react-redux'
 import Navbar from './Navbar'
-import StandingsContainer from './standings/StandingsContainer'
-import Top6Container from './top6/Top6Container';
+import StandingsTable from './standings/StandingsTable'
+import Top6Grid from './top6/Top6Grid'
+import { standingsFetch } from '../reducers/standingsReducer'
+import { top6Fetch } from '../reducers/top6Reducer'
 
 // wire up routes here
 
 class App extends Component {
+  async componentDidMount() {
+    await this.props.getStandings()
+    await this.props.getTop6()
+
+  }
+
   render() {
+    const { standings, top6, standingsLoading, top6Loading } = this.props
     return (
       <HashRouter>
         <div className="App">
           <Navbar />
-          <div id="content">
-            <Route path='/standings' component={StandingsContainer} />
-            <Route path='/top6' component={Top6Container} />
-            <Route exact path='/' component={StandingsContainer} />
-          </div>
+          {
+            (standingsLoading === true || top6Loading === true) ? <div id="loading"></div> :
+              <div id="content">
+                <Route path='/standings' render={() => <StandingsTable standings={standings} />} />
+                <Route path='/top6' render={() => <Top6Grid top6={top6} />} />
+                <Route exact path='/' render={() => <StandingsTable standings={standings} />} />
+              </div>
+          }
         </div>
       </HashRouter>
     );
   }
 }
 
-export default App;
+const mapState = state => {
+  return {
+    standings: state.standings.standings,
+    standingsLoading: state.standings.loading,
+    top6: state.top6.top6,
+    top6Loading: state.top6.loading
+  }
+}
+
+const mapProps = dispatch => {
+  return {
+    getStandings: () => dispatch(standingsFetch()),
+    getTop6: () => dispatch(top6Fetch())
+  }
+}
+
+export default connect(mapState, mapProps)(App);
